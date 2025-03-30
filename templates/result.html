@@ -6,12 +6,22 @@
     <title>Prediction Result</title>
 </head>
 <body>
-    <h1>Prediction Result</h1>
-    <p>Sepal Length: {{ sepal_length }}</p>
-    <p>Sepal Width: {{ sepal_width }}</p>
-    <p>Petal Length: {{ petal_length }}</p>
-    <p>Petal Width: {{ petal_width }}</p>
-    <h2>Predicted Class: {{ predicted_class_name }} (Class ID: {{ predicted_class }})</h2>
-    <a href="/">Predict Again</a>
+    <main>
+        <h1>Prediction Result</h1>
+        <section>
+            <h2>Input Values</h2>
+            <ul>
+                <li><strong>Sepal Length:</strong> {{ sepal_length }}</li>
+                <li><strong>Sepal Width:</strong> {{ sepal_width }}</li>
+                <li><strong>Petal Length:</strong> {{ petal_length }}</li>
+                <li><strong>Petal Width:</strong> {{ petal_width }}</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Prediction</h2>
+            <p><strong>Predicted Class:</strong> {{ predicted_class_name }} (Class ID: {{ predicted_class }})</p>
+        </section>
+        <a href="/" class="predict-again-link">Predict Again</a>
+    </main>
 </body>
 </html>
